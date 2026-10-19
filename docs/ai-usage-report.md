@@ -1,42 +1,112 @@
 # AI Usage Report
 
-## 1. Tools Used & Use Cases
-For this assignment, I used **AI Chat Assistant** as a coding helper and learning partner[cite: 1]. 
+## 1. AI Tool Used
 
-Here is what I used it for[cite: 1]:
-- **Writing the starting structure**: I asked the AI to help me create the basic HTML5 layout with the required sections (About Me, Projects, Contact)[cite: 1].
-- **Styling with CSS**: I used it to get ideas for clean styling, setting up CSS Grid for the project cards, and writing the CSS variables for the color theme[cite: 1].
-- **Adding JavaScript features**: The AI helped me write the logic for the dark/light mode toggle and how to handle the contact form submission without refreshing the page[cite: 1].
+For this assignment, I used ChatGPT as a coding assistant, learning partner, and documentation helper.
 
----
+I used ChatGPT to:
 
-## 2. Benefits & Challenges
+- Plan the required Assignment 2 features.
+- Add a dynamic project filter using JavaScript.
+- Improve the contact form validation and feedback messages.
+- Add CSS styling, transitions, and hover effects.
+- Review the HTML structure and separate the Projects and Contact sections.
+- Update the README file for Assignment 2.
+- Update the technical documentation and AI usage report.
+- Receive guidance while creating and uploading the GitHub repository.
 
-### Benefits:
-- **Saved time**: Instead of writing every single HTML tag or CSS reset from scratch, I was able to get a working base quickly and focus on making it look good[cite: 1].
-- **Helped me understand CSS Grid better**: Seeing how `repeat(auto-fit, minmax(...))` works in practice made responsive design much easier for me to understand than just reading documentation[cite: 1].
-- **Fast debugging**: Whenever something looked slightly off, I could quickly ask how to fix alignment or spacing[cite: 1].
+## 2. Features Added with AI Assistance
 
-### Challenges:
-- **Default assumptions and placeholders**: The AI initially generated generic placeholder information and standard assumptions that did not fit my profile[cite: 1]. I reviewed the content, corrected the details, and updated the text manually so it accurately reflected my actual background[cite: 1].
-- **Overly generic and wordy text**: Some of the generated descriptions felt unnecessary and wordy[cite: 1]. I trimmed out the fluff to keep the content concise, direct, and focused on what matters[cite: 1].
-- **Code review and adding manual comments**: The AI-generated code needed personal documentation to demonstrate understanding[cite: 1]. I went through the entire codebase, reviewed how each component worked, and wrote my own explanatory comments to break down key concepts (such as the viewport meta tag, responsive grid logic, and form event handling)[cite: 1].
-- **Avoiding over-engineering**: Some suggested layout and JavaScript patterns felt too complex for a foundation assignment[cite: 1]. I simplified them to keep the project clean, readable, and easy to maintain myself[cite: 1].
+### Dynamic Project Filtering
 
----
+ChatGPT helped me add filter buttons for the project section:
 
-## 3. Learning Outcomes
-By working on this assignment with AI assistance, I learned[cite: 1]:
-- How to make cards wrap and adapt to mobile screens automatically using CSS Grid without needing too many complex media queries[cite: 1].
-- How dark mode actually works behind the scenes using CSS variables and changing attributes on the `<body>` tag[cite: 1].
-- How to save user settings in `localStorage` so the chosen theme stays active even after refreshing the page[cite: 1].
-- How to use `event.preventDefault()` in JavaScript so forms don't reload the page on submit[cite: 1].
+- All
+- Web
+- API
 
----
+When a user selects a category, JavaScript checks the `data-category` value of each project card and hides projects that do not match the selected category.
 
-## 4. Responsible Use & Modifications
-I used AI strictly as a supportive assistant rather than letting it build the site independently[cite: 1]:
-- **Hands-on supervision**: I worked step-by-step, reviewing each file (`index.html`, `styles.css`, and `script.js`) individually before pasting or saving anything into my workspace.
-- **Content ownership**: I customized all textual elements, wrote my own tagline and project descriptions, and ensured every element served a clear purpose in my portfolio[cite: 1].
-- **Simplifying and refining**: Whenever the AI offered suggestions that were redundant or too verbose, I asked for simpler alternatives or adjusted the code manually to match what we are learning in class[cite: 1].
-- **Local testing**: I ran the code locally, tested the responsiveness by resizing the browser window, and verified that both the theme toggle and the contact form alert worked properly before finalizing the files[cite: 1].
+### Dark and Light Theme
+
+The original theme toggle was improved and kept in the project.
+
+The selected theme is stored using browser `localStorage`. This allows the website to remember the user's theme preference after the page is refreshed.
+
+### Contact Form Validation
+
+The contact form was improved to:
+
+- Check whether the name, email, and message fields are completed.
+- Display an error message when a field is empty.
+- Display a confirmation message when the form is submitted correctly.
+- Prevent the page from refreshing during submission.
+
+### User Feedback
+
+The website now provides feedback directly on the page instead of relying only on a browser alert.
+
+The project also includes an empty-state message if no projects match the selected filter.
+
+### Animations and Transitions
+
+CSS transitions were added to improve the user experience. These include:
+
+- Hover effects on project cards.
+- Hover effects on buttons.
+- Smooth theme color changes.
+- Small movement effects when buttons are selected or hovered.
+
+## 3. Benefits of Using AI
+
+AI assistance provided several benefits:
+
+- It helped me plan the assignment requirements before making changes.
+- It provided examples of JavaScript event listeners and DOM manipulation.
+- It helped me understand how `data-*` attributes can be used for project filtering.
+- It helped me improve form validation and user feedback.
+- It helped identify the need to keep the Projects and Contact sections separate.
+- It helped me organize and update the project documentation.
+- It helped me troubleshoot the GitHub repository upload and folder structure.
+
+## 4. Challenges and Manual Improvements
+
+The AI-generated suggestions were not used without review.
+
+I made several manual decisions and improvements:
+
+- I kept the existing portfolio design instead of rebuilding the entire website.
+- I changed the project cards to include `data-category` attributes.
+- I selected which projects belonged to the Web and API categories.
+- I replaced the browser alert with an on-page form status message.
+- I reviewed the HTML to ensure the Projects and Contact sections were separate.
+- I kept the code simple and suitable for the assignment.
+- I checked that the file paths matched the project folder structure.
+- I removed unnecessary or overly complicated suggestions.
+- I edited the documentation so it describes my actual project.
+
+## 5. Learning Outcomes
+
+Through this assignment, I learned:
+
+- How to use JavaScript event listeners to respond to button clicks.
+- How to use `querySelectorAll()` to select multiple elements.
+- How to use `data-*` attributes to store category information in HTML.
+- How to show and hide elements using JavaScript.
+- How to use the `hidden` property in JavaScript.
+- How to update text and CSS classes dynamically.
+- How to validate form input before accepting a submission.
+- How to use `event.preventDefault()` to stop a form from refreshing the page.
+- How to use `localStorage` to save a user preference.
+- How CSS transitions and hover effects improve user experience.
+- How to organize a project using separate HTML, CSS, JavaScript, assets, and documentation folders.
+
+## 6. Responsible Use of AI
+
+I used ChatGPT as a support tool rather than submitting unmodified AI-generated work.
+
+I worked through the project step by step and reviewed the suggested code before using it. I modified the code to match my existing portfolio, selected the project categories, edited the website text, and updated the documentation.
+
+I also asked for explanations when I did not understand a step. This helped me learn how the HTML, CSS, and JavaScript work together.
+
+The final project contains changes that were reviewed and adapted for my portfolio and assignment requirements.
