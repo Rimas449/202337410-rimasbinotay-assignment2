@@ -1,51 +1,115 @@
-# Personal Portfolio - Assignment 1
+# Personal Portfolio - Assignment 2
 
-A simple, responsive personal portfolio website built as part of the first assignment. It serves as a foundation to showcase my background, featured projects, and provide a direct contact form[cite: 1].
+An interactive and responsive personal portfolio website built using HTML, CSS, and JavaScript.
 
----
+This project improves the Assignment 1 portfolio by adding dynamic project filtering, theme preferences, form validation, user feedback, and smooth visual transitions.
 
 ## Features
-- **Semantic HTML5**: Clean structure with About Me, Projects, and Contact sections[cite: 1].
-- **Responsive Layout**: Designed to adapt smoothly across mobile screens, tablets, and desktop displays using CSS Grid and Flexbox[cite: 1].
-- **Dark / Light Theme Toggle**: A quick theme switcher that remembers user preferences via browser `localStorage`[cite: 1].
-- **Contact Form**: Interactive client-side validation and submission feedback[cite: 1].
 
----
+- **Semantic HTML5**
+  - Separate About, Projects, and Contact sections.
+- **Responsive Design**
+  - Uses CSS Grid and Flexbox for desktop, tablet, and mobile screens.
+- **Dynamic Project Filtering**
+  - Users can filter projects by All, Web, or API.
+- **Dark and Light Theme**
+  - Users can switch between dark and light mode.
+  - The selected theme is saved using `localStorage`.
+- **Contact Form Validation**
+  - Checks that all fields are completed before submission.
+  - Displays a success or error message without refreshing the page.
+- **User Feedback**
+  - Shows clear messages when the form is incomplete or successfully submitted.
+  - Displays a message when no projects match a selected category.
+- **Animations and Transitions**
+  - Includes hover effects on project cards, buttons, and links.
+  - Includes smooth color and movement transitions.
+- **Accessibility**
+  - Uses labels for form inputs.
+  - Includes accessible status messages using `aria-live`.
 
 ## Project Structure
-```text
-├── index.html
-├── README.md
-├── css/
-│   └── styles.css
-├── js/
-│   └── script.js
-├── assets/
-│   └── images/
-└── docs/
-    ├── ai-usage-report.md
-    └── technical-documentation.md
-```[cite: 1]
 
----
+    ├── index.html
+    ├── README.md
+    ├── css/
+    │   └── styles.css
+    ├── js/
+    │   └── script.js
+    ├── assets/
+    │   └── images/
+    └── docs/
+        ├── ai-usage-report.md
+        └── technical-documentation.md
 
-## Setup & How to Run Locally
-No build tools or installations are required[cite: 1]:
-1. Clone or download this repository to your machine[cite: 1].
-2. Open the project folder in your code editor (like VS Code)[cite: 1].
-3. Double-click `index.html` to open it in your default web browser, or right-click and choose **Open with Live Server**[cite: 1].
+## Technologies Used
 
----
+- HTML5
+- CSS3
+- JavaScript
+- Browser `localStorage`
+- GitHub Pages
+- GitHub
 
-## AI Integration Summary
-AI was used as a collaborative learning assistant throughout this assignment to help generate the initial HTML boilerplate, assist with responsive CSS patterns (Grid & Flexbox), and provide guidance on JavaScript event handling[cite: 1]. 
+## Setup and How to Run Locally
 
-All generated code was thoroughly reviewed, customized, and manually commented to ensure full understanding and meet all assignment requirements[cite: 1].
+No build tools or installations are required.
 
-> **Detailed Report**: Check the full breakdown in [`docs/ai-usage-report.md`](docs/ai-usage-report.md)[cite: 1].  
-> **Technical Details**: For implementation specifics, see [`docs/technical-documentation.md`](docs/technical-documentation.md)[cite: 1].
+1. Clone or download this repository.
+2. Open the project folder in Visual Studio Code or another code editor.
+3. Open `index.html` in a web browser.
+4. Alternatively, use the VS Code Live Server extension.
 
----
+## How to Use the Website
 
-## Live Demo
-*(Optional)* If deployed on GitHub Pages, the live link can be added here[cite: 1].
+### Change the Theme
+
+Click the moon or sun button in the navigation bar to switch between light and dark mode.
+
+The selected theme is saved automatically and remains active after refreshing the page.
+
+### Filter Projects
+
+Use the project filter buttons:
+
+- **All** displays every project.
+- **Web** displays web-based projects.
+- **API** displays projects that use an API.
+
+### Submit the Contact Form
+
+Enter your name, email address, and message.
+
+If a field is empty, an error message will appear. If all fields are completed, a confirmation message will appear.
+
+## AI Usage
+
+AI tools were used as learning and development assistants during this assignment.
+
+ChatGPT helped with:
+
+- Planning the interactive features.
+- Suggesting JavaScript event-handling techniques.
+- Debugging and improving the project filter.
+- Improving form validation and user feedback.
+- Reviewing the HTML structure and separating the Projects and Contact sections.
+- Improving the README and technical documentation.
+
+All AI-generated suggestions were reviewed, edited, and tested. I made sure I understood how the HTML, CSS, and JavaScript worked before using them in the project.
+
+Detailed information is available in:
+
+- [`docs/ai-usage-report.md`](docs/ai-usage-report.md)
+- [`docs/technical-documentation.md`](docs/technical-documentation.md)
+
+## Live Website
+
+The website is deployed using GitHub Pages:
+
+https://rimas449.github.io/202337410-rimasbinotay-assignment2/
+
+## Author
+
+Rimas Binotay
+
+Student ID: 202337410
