@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- this meta tag makes sure the site scales properly on phones and mobile screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rimas Portfolio</title>
+  <!-- connecting our external stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Portfolio</div>
+      <ul class="nav-links">
+        <!-- anchor links that jump directly to each section id -->
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- button for the dark/light mode feature handled in script.js -->
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- section 1: about me intro -->
+    <section id="about" class="section">
+      <div class="about-content">
+        <h1>Hi, I'm Rimas</h1>
+        <p class="tagline">Software Engineering Student & Web Enthusiast</p>
+        <p class="description">
+          I am a Software Engineering student passionate about web development and building clean, user-friendly applications.
+        </p>
+      </div>
+    </section>
+
+    <!-- section 2: projects grid -->
+    <section id="projects" class="section">
+      <h2>Featured Projects</h2>
+      <!-- container for grid layout in css -->
+      <div class="projects-grid">
+        <!-- project card 1 -->
+        <article class="project-card">
+          <!-- using placeholder images for now until real project screenshots are added -->
+          <img src="https://picsum.photos/400/250?random=1" alt="Task Manager App" class="project-img" />
+          <div class="card-body">
+            <h3>Student Task Manager</h3>
+            <p>A web application built to help university students organize assignments, track deadlines, and manage study schedules.</p>
+          </div>
+        </article>
+
+        <!-- project card 2 -->
+        <article class="project-card">
+          <img src="https://picsum.photos/400/250?random=2" alt="Weather Dashboard" class="project-img" />
+          <div class="card-body">
+            <h3>Weather Forecast Dashboard</h3>
+            <p>An interactive weather application fetching real-time meteorological data and dynamic forecasts using a weather API.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- section 3: contact form -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <!-- standard form, preventDefault will be used in js to handle submission -->
+      <form id="contact-form">
+        <div class="form-group">
+          <!-- label 'for' matches input 'id' for better accessibility -->
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email Address" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Rimas. All rights reserved.</p>
+  </footer>
+
+  <!-- importing the script at the bottom so the html elements load first -->
+  <script src="js/script.js"></script>
+</body>
+</html>
