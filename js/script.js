@@ -49,7 +49,7 @@ filterButtons.forEach((button) => {
         selectedFilter === "all" ||
         card.dataset.category === selectedFilter;
 
-      card.hidden = !shouldShow;
+    card.style.display = shouldShow ? "flex" : "none";
 
       if (shouldShow) {
         visibleProjects++;
