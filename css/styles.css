@@ -297,3 +297,7 @@ footer {
     width: 100%;
   }
 }
+/* Hide project cards when they do not match the selected filter */
+.project-card[hidden] {
+  display: none;
+}
